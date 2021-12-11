@@ -22,7 +22,7 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Translate")
 
 
-translated_sentence = predict(review)
+# translated_sentence = predict(review)
 if submitted:
     if review == '' or review == None:
         st.text(f"Please enter your english sentence below and press translate!")
