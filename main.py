@@ -21,12 +21,13 @@ with st.form("input_form"):
     # Every form must have a submit button.
     submitted = st.form_submit_button("Translate")
 
+if len(review.split(' ')) > 20:
+    st.text('Your input sentence has more than 20 words, please see its limitations')
+    # translated_sentence = predict(review)
 
-# translated_sentence = predict(review)
-
-
-if submitted:
-    if review == '' or review == None:
-        st.text(f"Please enter your english sentence below and press translate!")
-    else:
-        st.text(f"Your translated sentece will be shown here")
+else:
+    if submitted:
+        if review == '' or review == None:
+            st.text(f"Please enter your english sentence below and press translate!")
+        else:
+            st.text(f"Your translated sentece will be shown here")
