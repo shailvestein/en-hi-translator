@@ -10,8 +10,8 @@ import streamlit as st
 # Below we are defining a streamlit webpage which will take user input and predict polarity of taken review
 
 st.title("English-Hindi translater")
-st.text("This is Deep-Learning based model, which translates english language input sentence to hindi language sentence.")
-st.text("This model has some limitations and one of them is number of words in input sentence should not be greater than 20 words.")
+st.text("This is Deep-Learning based model,\nwhich translates english language input sentence to hindi language sentence.")
+st.text("This model has some limitations:\n1.   one of them is number of words in input sentence should not be greater than 20 words.")
 
 
 with st.form("input_form"):
