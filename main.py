@@ -9,7 +9,7 @@ import streamlit as st
 
 # Below we are defining a streamlit webpage which will take user input and predict polarity of taken review
 
-st.title("English-Hindi translater")
+st.title("English-Hindi translator")
 st.text("This is Deep-Learning based model,\nwhich translates english language input sentence to hindi language sentence.")
 st.text("This translator has its limitations:\n1.   Number of words in input sentence should not be greater than 20 words.")
 
@@ -31,3 +31,10 @@ else:
             st.text(f"Please enter your english sentence below and press translate!")
         else:
             st.text(f"Your translated sentece will be shown here")
+
+            
+hide_footer_style = """
+<style>
+.reportview-container .main footer {visibility: hidden;}    
+"""
+st.markdown(hide_footer_style, unsafe_allow_html=True)
