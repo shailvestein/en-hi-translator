@@ -11,7 +11,7 @@ import streamlit as st
 
 st.title("English-Hindi translater")
 st.text("This is Deep-Learning based model,\nwhich translates english language input sentence to hindi language sentence.")
-st.text("This model has some limitations:\n1.   one of them is number of words in input sentence should not be greater than 20 words.")
+st.text("This translator has its limitations:\n1.   Number of words in input sentence should not be greater than 20 words.")
 
 
 with st.form("input_form"):
