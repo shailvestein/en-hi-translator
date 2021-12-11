@@ -1,0 +1,7 @@
+pandas
+streamlit
+contractions
+tensorflow-gpu==2.4.0
+tqdm
+matplotlib
+seaborn
