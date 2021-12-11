@@ -14,7 +14,7 @@ st.header("This is Deep-Learning based model, which translates english language 
 # st.text_input(label="Enter your english sentence below")
 
 
-with st.form("my_form"):
+with st.form("input_form"):
     # st.write("Enter your english sentence below")
     review = st.text_input(label='Please enter your english sentence below')
 
@@ -23,10 +23,12 @@ with st.form("my_form"):
 
 
 # translated_sentence = predict(review)
-if submitted:
-    if review == '' or review == None:
-        st.text(f"Please enter your english sentence below and press translate!")
-    else:
-        st.text(f"Your translated sentece will be shown here")
+
+with st.form("output_form"):
+    if submitted:
+        if review == '' or review == None:
+            st.text(f"Please enter your english sentence below and press translate!")
+        else:
+            st.text(f"Your translated sentece will be shown here")
 
 
