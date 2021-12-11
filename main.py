@@ -30,5 +30,4 @@ with st.form("output_form"):
             st.text(f"Please enter your english sentence below and press translate!")
         else:
             st.text(f"Your translated sentece will be shown here")
-
-
+    clear_button = st.form_submit_button("Clear")
