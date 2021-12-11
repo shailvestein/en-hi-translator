@@ -38,3 +38,10 @@ hide_footer_style = """
 .reportview-container .main footer {visibility: hidden;}    
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
+
+copyright = """
+<style>
+.reportview-container .main footer {visibility: show;}    
+"""
+
+st.markdown("Created by Shailesh", unsafe_allow_html=False)
