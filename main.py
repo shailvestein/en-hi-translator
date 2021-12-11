@@ -19,7 +19,7 @@ with st.form("my_form"):
     review = st.text_input(label='Please enter your english sentence below')
 
     # Every form must have a submit button.
-    submitted = st.form_submit_button("Predict")
+    submitted = st.form_submit_button("Translate")
 
 
 if submitted:
